@@ -72,7 +72,7 @@
             <!-- Table Section -->
 
             <div class="col-12">
-                <h4 class="my-2">Feeds</h4>
+                <h4 class="my-2">Task</h4>
 
                 <div class="container my-3">
                     <div class="row">
@@ -89,9 +89,9 @@
                         </div>
                         
                         <div class="col-md-6 text-end">
-                            <button type="button" class="btn btn-primary cust1 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" >+ New Stock</button></div>
+                            <button type="button" class="btn btn-primary cust1 mb-3" data-bs-toggle="modal" data-bs-target="#new" data-bs-whatever="@mdo" >+ New Stock</button></div>
 
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="new" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                   <div class="modal-content">
                                     <div class="modal-header">
@@ -99,40 +99,29 @@
                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
-                                      <form>
-                                        <div class="mb-3">
-                                            <label for="stock-date" class="col-form-label">Date:</label>
-                                            <input type="date" class="form-control" id="stock-date">
-                                          </div>
-                                          <div class="mb-3">
-                                            <label for="product-id" class="col-form-label">Product ID:</label>
-                                            <input type="text" class="form-control" id="product-id">
-                                          </div>
-                                          <div class="mb-3">
-                                            <label for="product-name" class="col-form-label">Product:</label>
-                                            <input type="text" class="form-control" id="product-name">
-                                          </div>
-                                          <div class="mb-3">
-                                            <label for="product-kg" class="col-form-label">Kg:</label>
-                                            <input type="number" class="form-control" id="quantity">
-                                          </div>
-                                          <div class="mb-3">
-                                            <label for="quantity" class="col-form-label">Sack:</label>
-                                            <input type="number" class="form-control" id="quantity">
-                                          </div>
-                                          <div class="mb-3">
-                                            <label for="expiration" class="col-form-label">Expiration:</label>
-                                            <input type="date" class="form-control" id="expiration">
-                                          </div>
-                                          <div class="mb-3">
-                                            <label for="status" class="col-form-label">Status:</label>
-                                            <select class="form-control" id="status">
-                                              <option>Available</option>
-                                              <option>Out of Stock</option>
-                                              <option>Expired</option>
-                                            </select>
-                                          </div>
-                                      </form>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="Hog-ID" class="col-form-label">Hog ID:</label>
+                                                <input type="text" class="form-control" id="Hog-ID">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="Vaccine-Name" class="col-form-label">Task Name:</label>
+                                                <input type="text" class="form-control" id="Vaccine-Name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="ML" class="col-form-label">Quantity:</label>
+                                                <input type="text" class="form-control" id="ML">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="date" class="col-form-label">Date:</label>
+                                                <input type="date" class="form-control" id="date">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="time" class="col-form-label">Time:</label>
+                                                <input type="time" class="form-control" id="time">
+                                            </div>
+                                            
+                                        </form>
                                     </div>
                                     <div class="modal-footer">
                                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -146,25 +135,21 @@
                     <table class="table table-bordered">
                         <thead>
                             <tr>
+                                <th>Hog id</th>
+                                <th>Task Name</th>
+                                <th>Quantity</th>
                                 <th>Date</th>
-                                <th>Product id</th>
-                                <th>Product</th>
-                                <th>Kg</th>
-                                <th>Sack</th>
-                                <th>Expiration</th>
-                                <th>Status</th>
-                                <th>Actions</th>
+                                <th>Time</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>05/01/23</td>
-                                <td>HP1</td>
-                                <td>Hog Pre</td>
-                                <td>25</td>
-                                <td>1</td>
-                                <td>05/01/26</td>
-                                <td><span class="badge bg-danger">Out of Stock</span></td>
+                                <td>P1</td>
+                                <td>Vacination</td>
+                                <td>12</td>
+                                <td>01/26/24</td>
+                                <td>10:30 am</td>
                                 <td>
                                     <i class="marg"> 
                                         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#edit" data-bs-whatever="@mdo" ><ion-icon name="create-outline"></ion-icon></button></div>
@@ -175,13 +160,11 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>05/17/23</td>
-                                <td>HP2</td>
-                                <td>Hog Pre</td>
-                                <td>25</td>
-                                <td>1</td>
-                                <td>05/01/26</td>
-                                <td><span class="badge bg-success">Available</span></td>
+                                <td>P2</td>
+                                <td>Vacination</td>
+                                <td>12</td>
+                                <td>01/26/24</td>
+                                <td>10:30 am</td>
                                 <td>
                                     <i class="marg"> 
                                         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#edit" data-bs-whatever="@mdo" ><ion-icon name="create-outline"></ion-icon></button></div>
@@ -193,13 +176,11 @@
                                 
                             </tr>
                             <tr>
-                                <td>07/01/23</td>
-                                <td>BS1</td>
-                                <td>Bmeg Starter</td>
-                                <td>50</td>
-                                <td>1</td>
-                                <td>05/01/26</td>
-                                <td><span class="badge bg-success">Available</span></td>
+                                <td>P3</td>
+                                <td>Supplement</td>
+                                <td>12</td>
+                                <td>01/26/24</td>
+                                <td>10:30 am</td>
                                 <td>
                                     <i class="marg"> 
                                         <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#edit" data-bs-whatever="@mdo" ><ion-icon name="create-outline"></ion-icon></button></div>
@@ -209,70 +190,50 @@
                                     </i>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>07/10/23</td>
-                                <td>BS2</td>
-                                <td>Bmeg Starter</td>
-                                <td>50</td>
-                                <td>1</td>
-                                <td>05/01/26</td>
-                                <td><span class="badge bg-success">Available</span></td>
-                                <td>
-                                    <i class="marg"> 
-                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#edit" data-bs-whatever="@mdo" ><ion-icon name="create-outline"></ion-icon></button></div>
-                                    </i>
-                                    <i class="marg1">
-                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#delete" data-bs-whatever="@mdo" ><ion-icon name="trash-outline"></ion-icon></button></div>
-                                    </i>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>07/29/23</td>
-                                <td>G1</td>
-                                <td>Grower</td>
-                                <td>25</td>
-                                <td>1</td>
-                                <td>05/01/26</td>
-                                <td><span class="badge bg-success">Available</span></td>
-                                <td>
-                                    <i class="marg"> 
-                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#edit" data-bs-whatever="@mdo" ><ion-icon name="create-outline"></ion-icon></button></div>
-                                    </i>
-                                    <i class="marg1">
-                                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#delete" data-bs-whatever="@mdo" ><ion-icon name="trash-outline"></ion-icon></button></div>
-                                    </i>
-                                </td>
-                            </tr>
+                            
                         </tbody>
                     </table>
 
 
-                            <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form>
-                                                <div class="mb-3">
-                                                    <label for="status" class="col-form-label">Status:</label>
-                                                    <select class="form-control" id="status">
-                                                    <option>Available</option>
-                                                    <option>Out of Stock</option>
-                                                    <option>Expired</option>
-                                                    </select>
-                                                </div>
-                                            </form>
-                                            </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            <button type="button" class="btn btn-primary">Save</button>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Edit</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="Hog-ID" class="col-form-label">Hog ID:</label>
+                                        <input type="text" class="form-control" id="Hog-ID">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="Vaccine-Name" class="col-form-label">Task Name:</label>
+                                        <input type="text" class="form-control" id="Vaccine-Name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="ML" class="col-form-label">Quantity:</label>
+                                        <input type="text" class="form-control" id="ML">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="date" class="col-form-label">Date:</label>
+                                        <input type="date" class="form-control" id="date">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="time" class="col-form-label">Time:</label>
+                                        <input type="time" class="form-control" id="time">
+                                    </div>
+                                    
+                                </form>
+                            </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save Changes</button>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
 
                             <div class="modal fade" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">

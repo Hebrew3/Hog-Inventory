@@ -68,7 +68,7 @@ button.btn .cust1{
 .marg {
     cursor: pointer; 
     align-items: center;
-    margin-right: 20px;
+    
 }
 .marg1 {
     cursor: pointer; 
@@ -76,4 +76,6 @@ button.btn .cust1{
    
 }
 
-
+.table{
+    text-align: center;
+}

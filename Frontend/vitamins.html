@@ -20,20 +20,27 @@
         
     <div class="d-flex">
         <div id="sidebar" class="bg-primary p-3" >
+
+            <div class="sidebar-logo text-center mb-3">
+                <img src="asset/hog.jpg" alt="Logo" class="img-fluid" style="max-width: 140px;">
+            </div>
             
             <ul class="nav flex-column">
                 
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i><ion-icon name="bag-outline"></ion-icon></i> Feeds</a>
+                    <a class="nav-link text-white" href="feeds.html"><i><ion-icon name="bag-outline"></ion-icon></i> Feeds</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i><ion-icon name="medkit-outline"></ion-icon></i> Vitamins</a>
+                    <a class="nav-link text-white" href="vitamins.html"><i><ion-icon name="medkit-outline"></ion-icon></i> Vitamins</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i><ion-icon name="bandage-outline"></ion-icon></i> Vaccine</a>
+                    <a class="nav-link text-white" href="vaccine.html"><i><ion-icon name="bandage-outline"></ion-icon></i> Vaccine</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i><ion-icon name="construct-outline"></ion-icon></i> Tools</a>
+                    <a class="nav-link text-white" href="tools.html"><i><ion-icon name="construct-outline"></ion-icon></i> Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="sched.html"><i><ion-icon name="calendar-outline"></ion-icon></i>Schedule</a>
                 </li>
             </ul>
         </div>
@@ -44,10 +51,11 @@
                 <div class="col-12">
                     <nav class="navbar navbar-light bg-white border-bottom d-flex justify-content-end">
                         <ul class="nav ms-auto">
-                            <li class="nav-item"><a href="#" class="nav-link">FEEDS</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">VITAMINS</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">VACCINE</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link">TOOLS</a></li>
+                            <li class="nav-item"><a href="feeds.html" class="nav-link">FEEDS</a></li>
+                            <li class="nav-item"><a href="vitamins.html" class="nav-link">VITAMINS</a></li>
+                            <li class="nav-item"><a href="vaccine.html" class="nav-link">VACCINE</a></li>
+                            <li class="nav-item"><a href="tools.html" class="nav-link">TOOLS</a></li>
+                            <li class="nav-item"><a href="sched.html" class="nav-link">SCHEDULE</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -57,7 +65,22 @@
             
                     <div class="col-12">
                         <h4 class="my-2">Vitamins</h4>
-                        <div class="text-end">
+
+                        <div class="container my-3">
+                            <div class="row">
+                                <!-- Show entries dropdown -->
+                                <div class="col-md-6 d-flex align-items-center">
+                                    <label for="entries" class="me-2">Show</label>
+                                    <select id="entries" class="form-select w-auto">
+                                        <option value="10">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                    <span class="ms-2">entries</span>
+                                </div>
+
+                        <div class="col-md-6 text-end">
                             <button type="button" class="btn btn-primary cust1 mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" >+ New Stock</button></div>
 
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -110,6 +133,8 @@
                                   </div>
                                 </div>
                               </div>
+                            </div>
+                        </div>
                     <table class="table table-bordered">
                         <thead>
                             <tr>
@@ -256,6 +281,27 @@
                           </div>
                         </div>
                       </div>  
+
+                      <div class="container">
+                        <div class=" d-flex justify-content-end">
+                            <nav aria-label="Page navigation">
+                                <ul class="pagination">
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
                     
                 </div>
             </div>
